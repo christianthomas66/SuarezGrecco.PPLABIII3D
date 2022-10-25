@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Backend/scripts.js" type="module"></script>
+    <link rel="stylesheet" href="./css/estilos1.css">
+    <title>Administracion</title>
+</head>
+    
+<body>
+    <header class="navegacion">
+        <img src="./img/portada.jpg" class="logo"/>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Administracion</h1>
+    <div>
+        <img src="./img/portada_autos.png" id="portadaAutos" />
+    <form class="formulario">
+        <fieldset>
+            <legend>Informacion Del Anuncio</legend>
+
+            <input type="hidden" name="id">
+
+            <label for="titulo">Titulo:</label>
+            <input class="letras" type="text" name="titulo" placeholder="Titulo" required><br><br>
+
+            <label for="transaccion">Transaccion:</label>
+            <select class=""name="transaccion" id="transaccion" required>
+                <option id="transaccion" value="" disabled selected>---Elegir Transacción---</option>
+                <option value="Venta" id="venta">Venta</option>
+                <option value="Alquiler" id="alquiler">Alquiler</option>
+                <option value="Permuta" id="permuta">Permuta</option>
+            </select>
+            <br><br>
+
+            <label for="descripcion">Descripcion:</label>
+            <input class="letras" type="text" name="descripcion" placeholder="Descripcion" required><br><br>
+
+            <label for="precio">Precio:</label>
+            <input class="letras" type="number" name="precio" step="0.01"  placeholder="Precio" required><br><br>
+
+            <div>
+                <img src="./img/puertas.png" class="iconos">
+                <input class="letras" type="number" name="num_puertas" placeholder="Puertas" required><br><br>
+    
+                <img src="./img/kms.png" class="iconos">
+                <input class="letras" type="number" name="num_kmh" placeholder="KMs" required><br><br>
+    
+                <img src="./img/potencia.png" class="iconos">
+                <input class="letras" type="number" name="potencia" placeholder="Potencia" required><br><br>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" id="btnSubmit" value="Guardar"> 
+            <input type="button" id="btnEliminar" class="oculto" value="Eliminar">
+        </div>
+    </form>
+
+    <div id ="spinner-container"></div>
+    <div id="divLista"></div>
+</div>
+</main>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Anuncios</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <p>Todos los derechos reservados <date>2021</date>&copy;</p>
+  </footer>
+</body>
+</html>
